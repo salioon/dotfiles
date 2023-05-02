@@ -1,4 +1,4 @@
-#fork qtile matt linuxcast.org,antonio sarrosi qtile,moded by salioon
+#fork qtile matt https://thelinuxcast.org,antonio sarrosi qtile,moded by salioon
 
 #gruvbox config
 from typing import List  # noqa: F401
