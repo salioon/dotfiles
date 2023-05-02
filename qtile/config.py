@@ -11,7 +11,6 @@ from libqtile.config import Click, Drag, Group, ScratchPad, DropDown, Key, Match
 from libqtile.lazy import lazy
 from settings.path import qtile_path
 #from settings.mouse import mouse
-from settings.keys import mod, keys
 #from settings.screens import screens
 import colors
 
