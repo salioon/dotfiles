@@ -1,0 +1,18 @@
+#!/bin/sh
+
+filter() {
+	sed "/^volume:/d" | tac | sed -e "s/\\&/&amp;/g;s/\\[paused\\].*/<span color=\"gray\" font_style=\"italic\">/g;s/\\[playing\\].*/<span>/g" | tr -d '\n' | sed -e "s/$/<\\/span>\n/g"
+	}
+
+case $BLOCK_BUTTON in
+    1) mpv status | filter && setsid "$TERMINAL" -e mpv & ;;  # right click, pause/unpause
+    2) mpv toggle | filter ;;  # right click, pause/unpause
+    3) mpv status | filter && notify-send "🎵 Music module" "\- Shows mpd song playing.
+- Italic when paused.
+- Left click opens ncmpcpp.
+- Middle click pauses.
+- Scroll changes track.";;  # right click, pause/unpause
+    4) mpv prev   | filter ;;  # scroll up, previous
+    5) mpv next   | filter ;;  # scroll down, next
+    *) mpv status | filter ;;
+esac; exit
