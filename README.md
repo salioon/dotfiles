@@ -4,5 +4,7 @@
 ---
 *copiar o clonar archivos dentro de la carpeta $home/usuario/.config* 📁
 ---
-*copiar archivos o clonar dentro de la carpeta home/usuario dependiendo que tipo de config sea* 📁
+*copiar o clonar archivos dentro de la carpeta $home/usuario/.local/bin* 📁
+---
+*copiar archivos o clonar dentro de la carpeta home/usuario dependiendo que tipo de config sea* 📚
 ---
