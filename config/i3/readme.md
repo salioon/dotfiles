@@ -1,6 +1,6 @@
 #
-*qtile by sali:*
+*I3 by sali:*
 ---
 <img align="right" width="2000" src="https://github.com/salioon/dotfiles/blob/main/config/qtile/qtile.png" />
 
-*necesita dependencias: dunst,picom,sxhkd,clipmenu,fish,exa,lf,polkit-gnome,rofi,dmenu,feh*
+*dependencias: i3,i3blocks,picom,fish,exa,lf,rofi,dmenu*
