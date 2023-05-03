@@ -1,5 +1,5 @@
 # dotfiles
-📖 configuraciones de linux / configs linux 🖥
+*📖 configuraciones de linux / configs linux 🖥*
 
 ---
 *copiar o clonar archivos dentro de la carpeta $home/usuario/.config* 📁
