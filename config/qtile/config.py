@@ -1,4 +1,4 @@
-#fork qtile matt:https://thelinuxcast.org,Antonio sarrosi,moded by salioon
+#fork qtile matt:https://thelinuxcast.org,Antonio Sarosi,moded by salioon
 from typing import List  # noqa: F401
 import os
 import subprocess
