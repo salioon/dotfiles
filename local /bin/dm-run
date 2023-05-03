@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Set with the flags "-e", "-u","-o pipefail" cause the script to fail
+# if certain things happen, which is a good thing. Otherwise, we can
+# get hidden bugs that are hard to discover.
+set -euo pipefail
+
+# This environment variable ensures that Java applications are rendered correctly
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Run dmenu with the specified options, passing any additional arguments to the command
+# The resulting command is executed using the user's default shell, or /bin/sh if none is set
+exec $(dmenu_path | dmenu -l 20 -g 3 -x 9 -y 9 -z 680 -p 'Run: ' "$@" | ${SHELL:-"/bin/sh"})
+
