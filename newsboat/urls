@@ -1,0 +1,108 @@
+# "query:Unread Articles:unread = \"yes\""
+"query:Blog Posts:tags # \"blog\""
+"query:distrowatch:tags # \"distrowatch\""
+"query:Blog Posts:tags # \"blogs\""
+
+"query:Videos:tags # \"video\""
+
+# Blogs
+https://ericmurphy.xyz/index.xml blog
+https://www.devdungeon.com/rss.xml blog
+https://lukesmith.xyz/rss.xml blog
+https://switchedtolinux.com/tutorials?format=feed&type=rss blog
+https://switchedtolinux.com/news?format=feed&type=rss blog
+https://switchedtolinux.com/linux/distros?format=feed&type=rss blog
+https://switchedtolinux.com/linux/software/?format=feed&type=rss blog
+https://switchedtolinux.com/linux/desktop-environments/?format=feed&type=rss blog
+https://tynan.com/feed/ blog
+https://opensourcemusings.com/feed/ blog
+https://www.schneier.com/feed/atom blog
+
+# distrowatch:
+https://distrowatch.com/news/dw.xml distrowatch
+https://distrowatch.com/news/dwd.xml distrowatch
+https://distrowatch.com/news/news-headlines.xml distrowatch
+https://distrowatch.com/news/dwp.xml distrowatch
+
+
+# YouTube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCgHXvTpaNOBCIDqCNhOxPkg video tech # Karlas Project Linux Spain
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWxUfCyAMgs2dZO_oRkQPog video tech # Zatiel Linux Latino America
+https://www.youtube.com/feeds/videos.xml?channel_id=UCq1jZXZJ3ULECQ9CntnNXhA video tech # SalmorejoGeek Linux Spain
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDCYAAuADe_GntTBEDPAXtQ video tech # LinuxeroErrante JuanJJ Spain
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3cQA-iGSLflP8879xHcwTA video tech # Eduardo Medina Spain
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzrFWz6KrJy-VOz6D7EoT4w video tech # La Chica de Sistemas Argentina
+https://www.youtube.com/feeds/videos.xml?channel_id=UCl8XUDjAOLc7GNKcDp9Nepg video tech # Locos por linux Brasil/Argentina
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtV2Zv7h-5RCW_Dou5JJDIg video tech # rikerlinuxtips brasil
+https://www.youtube.com/feeds/videos.xml?channel_id=UC0seCZdnZZByQZP1Lx8oL2A video tech # rikerlinux brasil
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA video tech # Diolinux Brasil
+https://www.youtube.com/feeds/videos.xml?channel_id=UC629vKGFPRc1rz6VDm6OZiQ video tech # DiolinuxLabs Brasil
+https://www.youtube.com/feeds/videos.xml?channel_id=UClz3DneoYlccluy4hBlx86Q video tech # Slackjeff Brasil
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd2FHKnQ3ymrNhdsV9J0VmA video tech # Vegadata Brasil
+https://www.youtube.com/feeds/videos.xml?user=sunknudsen video tech # sunknudsen Privacy Security Research
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMiyV_Ib77XLpzHPQH_q0qQ video tech # Veronica Explains
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYVU6rModlGxvJbszCclGGw video tech # Rob Braxman Tech
+https://www.youtube.com/feeds/videos.xml?user=naseros video tech # Naseros Redes spain
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrBzBOMcUVV8ryyAU_c6P5g video tech # PeladoNerd argentina
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5KDiSAFxrDWhmysBcNqtMA video tech # Eric Murphy linux usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNvl_86ygZXRuXjxbONI5jA video tech # 10leej LinuxGentoo usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmw-QGOHbHA5cDAvwwqUTKQ video tech # zaney Linux usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg video tech # The Linux Cast Matt usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBq5p-xOla8xhnrbhu8AIAg video tech # Robertson Tech over Tea usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCoryWpk4QVYKFCJul9KBdyw video tech # SwitchedtoLinux usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCgkG68BiCngkoV7I2BLtAVg video tech # Devdungeon usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA video tech # Luke Smith usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA video tech # Mental Outlaw usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA video tech # Brodie Robertson usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5U7mHlhP6s6478wd7ZvnhA video tech # Trafotin usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjr2bPAyPV7t35MvcgT3W8Q video tech # The Hated One usa
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw video tech # The Linux Experiment france
+
+
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCG-3rEW4IrDNa7-9iGByc2A video fitness # Natural Hypertrophy
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRLOLGZl3-QTaJfLmAKgoAw video fitness # Alan Thrall
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmdlnVFzmf7Zhqm_QE-UlJw video fitness # Alex Leonidas
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfQgsKhHjSyRLOp9mnffqVg video fitness # Renaissance Periodization
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbYoTv5DbJmzKwxx5dmnu6g video fitness # Bald Omni-Man
+https://www.youtube.com/feeds/videos.xml?channel_id=UCclRFAVSUGe8cu9JkvY6nNA video fitness # Alexander Bromley
+https://www.youtube.com/feeds/videos.xml?channel_id=UCf33v9eZOy59r7HM44ni_4Q video fitness # Basement Bodybuilding
+https://www.youtube.com/feeds/videos.xml?channel_id=UClWbQQhAM2VH-drp2mBwLlw video fitness # Peter Khatcherian
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzGVKv513I6Zb0u3mLsL_7w video fitness # SSD Abel
+https://www.youtube.com/feeds/videos.xml?channel_id=UCObA5o3mcc1felIMAv6cukw video fitness # Geoffrey Verity Schofield
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJqUYFSwCsDZtWSIDJV8j4g video fitness # Stand Strength
+
+
+# Blogs
+https://diolinux.com.br/rss blog
+https://brave.com/es/blog/index.xml
+https://www.malwarebytes.com/blog/feed/index.xml
+https://nakedsecurity.sophos.com/feed
+https://www.xda-developers.com/feed/ blog
+https://sourceforge.net/projects/nippongsi/rss?path=/
+https://www.testdevelocidad.es/feed/
+https://arstechnica.com/feed/ blog
+https://www.phoronix.com/rss.php blog
+https://www.linuxadictos.com/feed blog
+https://blog.desdelinux.net/feed blog
+https://www.muylinux.com/feed/ blog
+https://feeds.feedburner.com/ProfesionalReview
+https://www.adslzone.net/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=listas&post_type%5B6%5D=como-se-hace&post_type%5B7%5D=esenciales&post_type%5B8%5D=especiales&post_type%5B9%5D=ofertas&post_type%5B10%5D=reportajes&post_type%5B11%5D=operadores&post_type%5B12%5D=e-mobilidad&post_type%5B13%5D=az_banda_ancha&post_type%5B14%5D=az_p2p&post_type%5B15%5D=az_software&post_type%5B16%5D=az_phones&post_type%5B17%5D=az_redes&post_type%5B18%5D=az_router
+https://www.muyseguridad.net/feed/ blog
+https://www.muycomputer.com/feed/ blog
+http://feeds.weblogssl.com/genbeta blog
+http://www.eleconomista.es/rss/rss-category.php?category=tecnologia
+https://www.eleconomista.es/rss/rss-economia.php
+https://www.eleconomista.es/rss/rss-mercados.php
+https://www.20minutos.es/rss/
+https://www.canarias7.es/rss/2.0/portada
+https://www.canarias7.es/rss/2.0/?section=ultima-hora
+https://www.canarias7.es/rss/2.0/?section=canarias
+https://www.eldiario.es/rss
+https://www.laprovincia.es/rss
+https://www.redeszone.net/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=analisis&post_type%5B6%5D=marcas&post_type%5B7%5D=tutoriales&post_type%5B8%5D=reportajes
+https://www.softzone.es/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=windows-10&post_type%5B6%5D=windows&post_type%5B7%5D=programas-top&post_type%5B8%5D=programas&post_type%5B9%5D=reportajes&post_type%5B10%5D=linux
+https://hardzone.es/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=review&post_type%5B6%5D=marcas&post_type%5B7%5D=tutoriales&post_type%5B8%5D=reportajes&post_type%5B9%5D=ofertas
+https://topesdegama.com/feed
+https://lamanzanamordida.net/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=aplicaciones&post_type%5B6%5D=juegos&post_type%5B7%5D=tutoriales&post_type%5B8%5D=reportajes
+https://www.movilzona.es/feed/?post_type%5B0%5D=post&post_type%5B1%5D=page&post_type%5B2%5D=best-pages&post_type%5B3%5D=branded&post_type%5B4%5D=noticias&post_type%5B5%5D=reportajes&post_type%5B6%5D=product&post_type%5B7%5D=tutoriales
