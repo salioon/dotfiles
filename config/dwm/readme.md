@@ -8,5 +8,5 @@ sudo make install
 <br> </br>
 <img align="right" width="2000" src="https://github.com/salioon/dotfiles/blob/main/config/dwm/dwmfoto.png" />
 
-*dependencias: xorg-xsetoot.dunst,xinerama,libxinerama*
+*dependencias: xorg-xsetroot.dunst,xinerama,libxinerama,etc..*
 
