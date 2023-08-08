@@ -46,7 +46,11 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+t exec kitty -e fish
+bindsym F1 exec kitty -e fish
+bindsym F2 exec terminator -e fish
+bindsym F3 exec kitty -e cmus
+bindsym F4 exec cool-retro-term
+bindsym $mod+t exec terminator 
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+o exec pcmanfm
 bindsym $mod+n exec xfce4-power-manager
@@ -59,14 +63,15 @@ bindsym $mod+x exec flatpak run com.brave.Browser
 bindsym $mod+Shift+o exec ranger
 bindsym $mod+Shift+p exec filezilla
 bindsym $mod+Shift+i exec remmina
-bindsym $mod+Shift+t exec tilix
+bindsym $mod+Shift+t exec terminator
 bindsym $mod+Shift+Return exec alacritty
 bindsym $mod+Shift+x exec flatpak run com.vscodium.codium
 bindsym $mod+Shift+z exec flatpak run com.obsproject.Studio
 bindsym $mod+F1 exec conky
 bindsym $mod+F2 exec /home/salion/.config/rofi/rofi-power-menu.sh
 bindsym $mod+F3 exec /home/salion/.config/rofi/rofi-monitors.sh
-bindsym $mod+F4 exec /home/salion/.config/rofi-wifi-menu.sh
+bindsym $mod+F4 exec /home/salion/.config/rofi/rofi-wifi-menu.sh
+bindsym $mod+F8 exec  /home/salion/.screenlayout/pantalla.sh
 bindsym $mod+F9 exec flameshot
 bindsym $mod+Shift+s exec xfce4-screenshooter 
 
@@ -205,7 +210,7 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
+bar { position top
         status_command i3status
        colors {
             background #222222
@@ -247,7 +252,6 @@ bar {
 
 #barrafull
 bar {
-    position top
    #status_command i3status
         status_command i3blocks
         colors {
