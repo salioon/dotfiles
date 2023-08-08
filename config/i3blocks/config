@@ -45,25 +45,25 @@ color=#A4C2F4
 #color=#52aeff
 #border=#52aeff
 
-[ip]
-label=𐚯
-full_text=IP-Local:
-command=ip addr | grep 192 | awk '{print $2}' | sed 's/\/.*//g'
-interval=60
-color=#91E78B
+#[ip]
+#label=𐚯
+#full_text=IP-Local:
+#command=ip addr | grep 192 | awk '{print $2}' | sed 's/\/.*//g'
+#interval=60
+#color=#91E78B
 #border=#91E78B
 
 [reset-button]
 label=♻
 full_text=Reiniciar
 color=#v8cd12
-command=reboot >/dev/null
+command=kitty -e sudo reboot
 
 [power-button]
 label=🔌
 full_text=Apagar
 color=#f8bf12
-command=poweroff >/dev/null
+command=kitty -e sudo poweroff
 
 #[calc-button]
 #full_text=Calculadora
@@ -72,15 +72,15 @@ command=poweroff >/dev/null
 #command=gnome-calculator >/dev/null
 
 
-[volume]
-color=#D6C1F2
-label=🔊Audio:
-instance=Master
+#[volume]
+#color=#D6C1F2
+#label=🔊Audio:
+#instance=Master
 #instance=PCM
 #instance=pavucontrol
-interval=1
-signal=10
-command=/usr/share/i3blocks/volume 5 pulse
+#interval=1
+#signal=10
+#command=/usr/share/i3blocks/volume 5 pulse
 
 
 #[publicip]
@@ -194,7 +194,7 @@ signal=6
 label=📥
 full_text=DL:
 interval=once
-command=deluge 
+command=qbittorrent 
 #command=$HOME"/.config/i3blocks/torrent
 signal=7
 
@@ -203,7 +203,7 @@ signal=7
 label=📬
 full_text=Mail:
 interval=once
-command=geary
+command=terminator -e neomutt
 #command=$HOME"/.config/i3blocks/mailbox
 #signal=12
 
@@ -218,13 +218,13 @@ command=geary
 #command=$HOME"/.config/i3blocks/volume
 #signal=10
 
-[disk]
-label=💾
-full_text=SSD:
-interval=once
-command=kitty -e ncdu /
+#[disk]
+#label=💾
+#full_text=SSD:
+#interval=once
+#command=kitty -e ncdu /
 #command=$HOME"/.config/i3blocks/disk.sh
-signal=19
+#signal=19
 
 #[battery]
 #label=BaT
@@ -243,27 +243,27 @@ interval=once
 signal=40
 
 
-[rofmon]
-full_text=Monitor
-label=🖳:
-command=exec /home/salion/powermenu/rofi-monitors.sh
+#[rofmon]
+#full_text=Monitor
+#label=🖳:
+#command=exec /home/salion/powermenu/rofi-monitors.sh
 #interval=3600
-color=#52aeff
+#color=#52aeff
 #border=#52aeff
 
-[rowifi]
-full_text=WIFI
-label=🌎:
-command=exec /home/salion/powermenu/rofi-wifi-menu.sh
+#[rowifi]
+#full_text=WIFI
+#label=🌎:
+#command=exec /home/salion/powermenu/rofi-wifi-menu.sh
 #interval=3600
-color=#52aeff
+#color=#52aeff
 #border=#52aeff
 
-[time]
-label=𐘿
-command=date +%T
-interval=5
-color=#B4C2F4
+#[time]
+#label=𐘿
+#command=date +%T
+#interval=5
+#color=#B4C2F4
 #border=#A4C2F
 
 #[internet]
