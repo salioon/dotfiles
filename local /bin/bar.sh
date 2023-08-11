@@ -16,7 +16,7 @@ set_color(){
   case $theme in 
     'catppuccin') 
       black=#1E1D2D
-      green=#ABE9B3
+      green=#00ff00
       white=#D9E0EE
       grey=#282737
       blue=#96CDFB
@@ -24,7 +24,7 @@ set_color(){
       darkblue=#83bae8 ;;
     'dracula')
       black=#21222c
-      green=#50fa7b
+      green=#00ff00
       white=#f8f8f2
       grey=#282a36
       blue=#d6acff
@@ -32,7 +32,7 @@ set_color(){
       darkblue=#bd93f9 ;;
     'gruvchad')
       black=#222526
-      green=#89b482
+      green=#00ff00
       white=#c7b89d
       grey=#2b2e2f
       blue=#6f8faf
@@ -40,7 +40,7 @@ set_color(){
       darkblue=#6080a0 ;;
     'nord')
       black=#2E3440
-    green=#A3BE8C
+    green=#00ff00
     white=#D8DEE9
     grey=#373d49
     blue=#81A1C1
@@ -48,7 +48,7 @@ set_color(){
     darkblue=#7292b2 ;;
   'onedark')
     black=#1e222a
-    green=#7eca9c 
+    green=#00ff00 
     white=#abb2bf
     grey=#282c34
     blue=#7aa2f7
@@ -72,7 +72,7 @@ pkg_updates() {
   if [ "$updates" -eq 0 ]; then
     printf "%s" "  ^c$green^    Actualizado"
   else
-    printf "%s" "  ^c$green^    $updates"" No Actualizado"
+    printf "%s" "  ^c$white^    $updates"" No Actualizado"
   fi
 }
 
@@ -80,7 +80,7 @@ battery() {
   get_status=$(cat /sys/class/power_supply/BAT?/status)
   get_capacity=$(cat /sys/class/power_supply/BAT?/capacity)
   # Set battery icon based on capacity and status
-  if [ "$get_status" = "Discharging" ]; then
+  if [ "$get_status" = "Descargando" ]; then
     if [ "$get_capacity" -ge 90 ]; then
       icon=" "
     elif [ "$get_capacity" -ge 70 ]; then
@@ -96,24 +96,24 @@ battery() {
     icon=" "
   fi
 
-  printf "^c$blue^ %s $icon $get_capacity"
+  printf "^c$white^ %s $icon $get_capacity"
 }
 
 mem() {
-  printf "%s" "^c$blue^^b$black^  "
-  printf "%s" "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+  printf "%s" "^c$green^^b$black^  "
+  printf "%s" "^c$white^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
 wlan() {
   case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
-    up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Conectado" ;;
-    down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Desconectado" ;;
+    up) printf "^c$black^ ^b$green^ 󰤨 ^d^%s" " ^c$white^Conectado" ;;
+    down) printf "^c$black^ ^b$green^ 󰤭 ^d^%s" " ^c$green^Desconectado" ;;
   esac
 }
 
 clock() {
-  printf "%s" "^c$black^ ^b$darkblue^ 󱑆 "
-  printf "%s" "^c$black^^b$blue^$(date '+%d/%m/%y %H:%M') "
+  printf "%s" "^c$black^ ^b$green^ 󱑆 "
+  printf "%s" "^c$black^^b$green^$(date '+%d/%m/%y %H:%M') "
 }
 
 while true; do
