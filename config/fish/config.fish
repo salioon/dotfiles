@@ -59,6 +59,8 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias ram="free -mt"
 alias discoespacio='sudo df -h | grep -E "sd|lv|Size"'
 alias correo="neomutt"
+alias ssdspeed="bwm-ng -u bytes -i disk"
+alias inetspeed="bwm-ng -u mbytes"
 alias bajarcorreo="mbsync -a"
 alias limpiador="sudo bleachbit"
 alias pantallafix="exec /home/salion/.screenlayout/pantalla.sh"
@@ -78,13 +80,23 @@ alias TorBrowser='flatpak run com.github.micahflee.torbrowser-launcher'
 alias verpuertos='sudo ss -tupln'
 alias verconexion='netstat -watp'
 alias ifconfig2='ip addr'
-#alias bloqueardns='sudo chattr +i /etc/resolv.conf'
+alias bloqueardns='sudo chattr +i /etc/resolv.conf'
+alias desbloqueardns='sudo chattr -i /etc/resolv.conf'
 alias bloquear='sudo nano /etc/hosts'
 alias editardns='sudo nano /etc/resolv.conf'
+alias papelera="trash-empty"
+alias basura="trash-empty"
+alias tmpborrar="sudo find /tmp -type f -atime +10 -delete"
+alias tmpborrarv2="sudo tmpfiles --clean"
+alias tmpborrarv3="sudo tmpfiles --remove"
 
+
+#pacmanrepo
+alias repoedit='sudo nano /etc/pacman/pacman.conf'
 
 #pacman
 alias update='sudo pacman -Sy'
+alias cleanup="sudo pacman -Rns"
 alias update2='sudo pacman -Syu'
 alias update3="sudo paru -Sy"
 alias update4="sudo paru -Syu"
@@ -94,7 +106,15 @@ alias update7='flatpak update'
 alias limpiar="sudo pacman -Sc"
 alias limpiar2="sudo paru -Sc"
 alias limpiar3="sudo yay -Sc"
+alias limpiar4="yay -Sc"
+alias limpiar5="paru -Sc"
+alias limpiar6="pacman -Sc"
+alias limpiar7="trash-empty"
+alias limpiar8="trash-list"
 alias limpiador="sudo bleachbit"
+alias userlist="cut -d: -f1 /etc/passwd | sort"
+alias xmmmp="profanity"
+alias yt="ytfzf"
 
 
 #bateria
@@ -133,7 +153,7 @@ alias arbol="ncdu |lolcat"
 alias vncremoto="vncserver :0"
 alias vncremoto1="vncserver :1"
 alias apagar="sudo poweroff"
-alias grubfix="grub2-mkconfig -o /boot/grub/grub.cfg"
+alias grubfix="grub-mkconfig -o /boot/grub/grub.cfg"
 alias fixrefind"sudo refind-install"
 alias admin="su"
 
@@ -153,10 +173,17 @@ alias nvim-pluginsv2="nvim +NvimSyncCorePlugins +q"
  alias menu='rofi -show drun'
  alias menu-v='rofi -show run '
  alias menu-tab='rofi -show '
- 
- #microeditor
- alias micro=" kitty -e /home/salion/Documentos/Telegram/micro/micro-2.0.11/micro"
 
+#exalf
+alias ls-1="ls -l |lolcat"
+alias ls-2="ls -a |lolcat"
+alias lf-l='exa -al --color=always --icons --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --icons --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --icons --group-directories-first'  # long format
+alias lt='exa -aT --color=always --icons --group-directories-first' # tree listing
+alias l.='exa -a | grep -E "^\."' #show only hidden files
+alias tree='exa --icons  -T' # tree listing
+ 
 
 alias IPTOR="curl https://check.torproject.org"
 alias torON="sudo tor start"
@@ -173,6 +200,10 @@ alias wire-usa-on="sudo wg-quick up wg1"
 alias wire-usa-off="sudo wg-quick down wg1"
 alias wire-jp-on="sudo wg-quick up wg2"
 alias wire-jp-off="sudo wg-quick down wg2"
+
+#idioma
+alias es="setxkbmap es"
+alias us="setxkbmap us"
 
 #lvm2
 #alias lvmoff="sudo vgchange -a n /dev/pve"
