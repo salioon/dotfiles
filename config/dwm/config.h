@@ -22,11 +22,11 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 
 static const char *fonts[]          = {"Iosevka:style:medium:size=13" ,"JetBrainsMono Nerd Font Mono:style:medium:size=19" };
 
-static const char col_gray1[]       = "#1E1D2D";
-static const char col_gray2[]       = "#282737";
+static const char col_gray1[]       = "#000000";
+static const char col_gray2[]       = "#000000";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#1E1D2D";
+static const char col_gray4[]       = "#000000";
+static const char col_cyan[]        = "#00ff00";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -133,12 +133,12 @@ static Keychord *keychords[] = {
   &((Keychord){2, {{MODKEY, XK_e}, {0, XK_s}},     spawn,     SHCMD( EMACS "--eval '(eshell)'") }),
   &((Keychord){2, {{MODKEY, XK_e}, {0, XK_v}},     spawn,     SHCMD( EMACS "--eval '(+vterm/here nil)'") }),
   // multimedia
-  &((Keychord){1,{{0, XF86XK_AudioLowerVolume}},   spawn,     SHCMD("volume down")}),
-  &((Keychord){1,{{0, XF86XK_AudioRaiseVolume}},   spawn,     SHCMD("volume up")}),
-  &((Keychord){1,{{0, XF86XK_AudioMute}},          spawn,     SHCMD("volume mute")}),
+  &((Keychord){1,{{0, XF86XK_AudioLowerVolume}},   spawn,     SHCMD("Bajar Volumen")}),
+  &((Keychord){1,{{0, XF86XK_AudioRaiseVolume}},   spawn,     SHCMD("Subir Volumen")}),
+  &((Keychord){1,{{0, XF86XK_AudioMute}},          spawn,     SHCMD("Mutear Volumen")}),
   // my scripts
   &((Keychord){2, {{MODKEY, XK_p}, {0, XK_p}},     spawn,     SHCMD("rofi -show drun")}),
-  &((Keychord){2, {{MODKEY, XK_p}, {0, XK_m}},     spawn,     SHCMD("terminator")}),
+  &((Keychord){2, {{MODKEY, XK_p}, {0, XK_m}},     spawn,     SHCMD("tilix")}),
   &((Keychord){1, {{MODKEY, XK_F2}},                spawn,    SHCMD("conky")}),
   &((Keychord){1, {{MODKEY, XK_F1}},                spawn,    SHCMD("rofi -show drun")}),
   &((Keychord){1, {{MODKEY, XK_F3}},                spawn,    SHCMD("nitrogen")}),
@@ -147,12 +147,12 @@ static Keychord *keychords[] = {
   &((Keychord){1, {{MODKEY, XK_u}},                 spawn,    SHCMD("thunar")}),
   &((Keychord){1, {{MODKEY, XK_p}},                 spawn,    SHCMD("rofi -show drun")}),
   &((Keychord){1, {{MODKEY, XK_F5}},                spawn,    SHCMD("dmenu_run")}),
-  &((Keychord){1, {{MODKEY, XK_F6}},                spawn,    SHCMD("terminator")}),
+  &((Keychord){1, {{MODKEY, XK_F6}},                spawn,    SHCMD("tilix")}),
   &((Keychord){1, {{MODKEY, XK_F9}},                spawn,    SHCMD("filezilla")}),
   &((Keychord){1, {{MODKEY, XK_F7}},                spawn,    SHCMD("alacritty")}),
-  &((Keychord){1, {{MODKEY, XK_F8}},                spawn,    SHCMD("xterm")}),
+  &((Keychord){1, {{MODKEY, XK_F8}},                spawn,    SHCMD("terminator")}),
   &((Keychord){1, {{MODKEY, XK_F10}},               spawn,    SHCMD("cool-retro-term")}),
-  &((Keychord){1, {{MODKEY, XK_F12}},               spawn,    SHCMD("exec bar.sh")}),
+  &((Keychord){1, {{MODKEY, XK_F12}},               spawn,    SHCMD("exec /usr/bin/bar.sh")}),
   &((Keychord){1, {{MODKEY, XK_F11}},               spawn,    SHCMD("flameshot")}),
 
 	TAGKEYS(                        XK_1,                      0)
